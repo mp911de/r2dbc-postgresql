@@ -27,4 +27,4 @@ jobs:
         env:
           SONATYPE_USER: ${{ secrets.SONATYPE_USER }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
-        run: ./mvnw -B deploy -D skipITs -P snapshot -s settings.xml
+        run: ./mvnw -B verify -P snapshot -s settings.xml
